@@ -1,0 +1,30 @@
+# AI-BOM Manifest v1.0
+# Compliance: NIST AI RMF Critical Infrastructure Profile (April 2026)
+
+metadata:
+  name: Agentic-1.0-Protocol
+  owner: bmcquinn
+  last_sleep_cycle: 2026-05-11T01:00:00Z
+
+base_model_specs:
+  provider: Anthropic
+  model_id: claude-3-5-sonnet-agentic-preview
+  truth_threshold: 1.0
+
+operational_parameters:
+  sleep_protocol:
+    enabled: true
+    feature: "Auto-Dream"
+    frequency: "every 24h"
+    function: "memory_consolidation_and_drift_correction"
+  
+  kill_switch:
+    primary: "Human_SmartRep_Override"
+    secondary: "Shell_Isolate_on_Truth_Drop"
+    trigger: "Score < 1.0"
+
+compliance:
+  safety_level: "High-Integrity Publicist"
+  data_residency: "Client-Defined"
+  audit_log: "immutable_ledger"
+  
