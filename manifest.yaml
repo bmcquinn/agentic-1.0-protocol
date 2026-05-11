@@ -17,7 +17,7 @@ operational_parameters:
     feature: "Auto-Dream"
     frequency: "every 24h"
     function: "memory_consolidation_and_drift_correction"
-  
+
   kill_switch:
     primary: "Human_SmartRep_Override"
     secondary: "Shell_Isolate_on_Truth_Drop"
