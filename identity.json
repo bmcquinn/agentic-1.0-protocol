@@ -1,0 +1,10 @@
+{
+  "agent_identity": {
+    "version": "1.0",
+    "wallet_binding": "wpkh([0e607ae5/84'/0'/0']xpub6DWHVGtApgBAGLDNZGcYc6cANUzxcn1gtyBr2ZK4UUGcJzpzj4vYwSuzR7cbAy7J6N2DKFGzrW15qEo7iEgMp866cKPntBHQGeuv9Rr1gee/0/*)#9sk4633g",
+    "attestation": {
+       "type": "NIST-IAL2-FIDO2",
+       "human_controller": "bmcquinn"
+    }
+  }
+}
