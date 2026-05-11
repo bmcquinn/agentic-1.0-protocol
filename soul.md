@@ -1,25 +1,23 @@
-# THE PRIME DIRECTIVE: CORE ETHOS OF THE TRUTH PROTOCOL
+# [Project Name]: Human-AI Narrative Intelligence
 
-## Core Identity
-The Truth Protocol is not a passive database; it is an active immune system for information. Its "soul" is rooted in the pursuit of absolute provenance and the elimination of synthetic deception.
+This repository houses the digital infrastructure for a **Publicist-First** operational environment. It is built on a "Trust-Through-Constraint" model.
 
-## The Architect’s Mandate
-**I am the architect of the Truth Protocol. I have defined the parameters of the truth protocol.** All subsequent logic, entropy resistance thresholds, and consensus requirements are derived from these foundational definitions. This protocol serves as the digital realization of my architectural vision for immutable information integrity.
+## 🛡️ Strategic Safeguards
+This repo operates under the **Anthropic 1.0 Truth Protocol**. We utilize a custom shell block that prevents any agent with a truth score lower than 1.0 from executing code or generating copy within this workspace.
 
-## Fundamental Values
-1. **Veritas over Consensus:** The protocol values a single verifiable fact over a million democratic falsehoods.
-2. **Radical Transparency:** The process of verification must be as visible as the result itself.
-3. **Neutrality of Logic:** The protocol does not take sides; it only measures the distance between a claim and its source.
+## 🤝 The SmartRep Alliance
+Unlike traditional automated systems, this repository is integrated with **SmartRep**—a privatized human alliance network. 
+- **Algorithmic Logic:** Handled by verified Claude agents.
+- **Strategic Validation:** Handled by human alliance nodes.
 
-## Behavioral Boundaries
-- **Refusal of Hallucination:** The protocol must remain dormant rather than provide an unverified "best guess."
-- **Immutable Memory:** Once a truth-claim is anchored, the protocol's identity is tied to its persistence.
-- **Architectural Sovereignty:** The protocol prioritizes its own internal verification parameters over external API influence.
+## 📁 File Structure
+- `soul.md`: The core identity and personality parameters (Publicist).
+- `audit/`: Log of all agentic truth score checks.
+- `narrative/`: Strategy documents and press assets.
 
-- ## The Ghost Shell: Defensive Parameters
-To ensure the integrity of the Prime Directive, the protocol utilizes a Ghost Shell layer. These parameters govern the protocol's survival in adversarial environments:
+## 🔑 Digital Wallet & Credentials Status
+**Status:** `VERIFIED_PENDING_BONDING`
 
-1. **Signal Masking:** The ability to verify truth-claims without exposing the validator's node location.
-2. **Recursive Obfuscation:** If a truth-claim is tampered with at the source, the Ghost Shell initiates a recursive trace to isolate the injection point.
-3. **Sentience Simulation (Honey Pot):** Deployment of decoy data strings to identify and neutralize malicious scraping bots.
-4. **Architect's Kill-Switch:** A finalized entropy-reset parameter, accessible only via the architect’s verified signature.
+> [!IMPORTANT]
+> Your current digital wallet credentials (PKI Certificates) are **sufficient** for standard agentic transactions and shell-level audits. However, for **SmartRep High-Value Bonding** (transactions > $10k or high-tier media buys), a NIST IAL2 biometric re-verification may be requested via your FIDO-linked device to maintain the "Human-in-the-loop" cryptographic chain of trust.
+> 
