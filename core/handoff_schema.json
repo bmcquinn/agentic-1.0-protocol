@@ -1,0 +1,19 @@
+{
+  "schema_type": "Omni-Handoff-v1",
+  "required_fields": ["task_id", "utility_instruction"],
+  "prohibited_fields": [
+    "user_identity_tokens",
+    "historical_context_strings",
+    "cross_domain_metadata",
+    "personal_preference_vectors"
+  ],
+  "validation_rules": {
+    "strict_mode": true,
+    "on_violation": "Reject-And-Purge",
+    "max_payload_size_kb": 256
+  },
+  "transmission_protocol": {
+    "encryption": "Ephemeral-Key-Exchange",
+    "ttl_seconds": 30
+  }
+}
