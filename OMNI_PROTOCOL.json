@@ -1,16 +1,17 @@
+
 {
-  "protocol_name": "Omni-Protocol Standard",
-  "implementation": "Agentic-1.0-Hardened",
-  "certification_date": "2026-05-12",
-  "compliance_matrix": {
-    "handshake_alignment": "./alliance_handshake.json",
-    "prohibition_firewall": "./PROHIBITIONS.json",
-    "operational_constraints": "./CONSTRAINTS.md",
-    "validation_engine": "./validator.py",
-    "stateless_runtime": "./core/stateless_runtime.py",
-    "identity_stripper": "./core/stripper.py",
-    "alliance_gate": "./core/alliance_gate.py"
+  "protocol_version": "1.0.0-Omni",
+  "alignment_target": "ClaimSmart_SmartRep_Alliance",
+  "security_parameters": {
+    "stateless_runtime": true,
+    "logic_stacking": "mandatory",
+    "memory_trap_purge": "active",
+    "agentic_drift_protection": "high_fidelity"
   },
-  "status": "Active-Enforcement",
-  "authority": "Mathematically-Hardened-Standard-v4"
+  "enforcement_layers": [
+    "Mechanical_Layer_v1",
+    "Firewall_Layer_v1",
+    "Diplomatic_Layer_v1"
+  ],
+  "authorized_entity_signature": "bmcquinn"
 }
