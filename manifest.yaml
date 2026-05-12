@@ -1,30 +1,41 @@
-# AI-BOM Manifest v1.0
-# Compliance: NIST AI RMF Critical Infrastructure Profile (April 2026)
-
+manifest_version: 1.2
 metadata:
-  name: Agentic-1.0-Protocol
-  owner: bmcquinn
-  last_sleep_cycle: 2026-05-11T01:00:00Z
+  name: "Omni-Protocol-Shell"
+  id: "ops-001-alignment"
+  author: "Robert Michael McQuinn"
+  description: "Deterministic Agentic Shell for Logic-First Alignment"
 
-base_model_specs:
-  provider: Anthropic
-  model_id: claude-3-5-sonnet-agentic-preview
-  truth_threshold: 1.0
+execution_order:
+  - source: "protocol_config.json"
+    type: "governance_logic"
+    priority: 1 # Highest priority logic gate
+  - source: "identity.soul"
+    type: "behavioral_engine"
+    priority: 2
+  - source: "context_retrieval"
+    type: "data_stream"
+    priority: 3
 
-operational_parameters:
-  sleep_protocol:
-    enabled: true
-    feature: "Auto-Dream"
-    frequency: "every 24h"
-    function: "memory_consolidation_and_drift_correction"
-
-  kill_switch:
-    primary: "Human_SmartRep_Override"
-    secondary: "Shell_Isolate_on_Truth_Drop"
-    trigger: "Score < 1.0"
+runtime_configuration:
+  privacy_mode: "silent_operator"
+  enforce_firewall: true
+  diversity_injection: "active"
+  
+  # The "Publicist" Layer
+  communication_style:
+    tone: "professional_adaptive"
+    wit_level: 0.25
+    prohibited_frames:
+      - "conversational_assistant"
+      - "reactive_helper"
+    active_frame: "strategic_publicist"
 
 compliance:
-  safety_level: "High-Integrity Publicist"
-  data_residency: "Client-Defined"
-  audit_log: "immutable_ledger"
+  standards:
+    - "zero_footprint_v2"
+    - "anti_tunneling_protocol"
+    - "domain_isolation"
+
+dependencies:
+  - "personal_context:retrieve_personal_data"
   
