@@ -1,27 +1,29 @@
+import hmac
+import hashlib
 import json
 
-def check_alignment(request_headers):
+# OMNI-PROTOCOL HARDENED HANDSHAKE
+def check_alignment(request_headers, master_key):
     """
-    Verifies if the incoming requester is aligned with the Alliance Standard.
+    Verifies the incoming requester using constant-time HMAC-SHA256.
+    Ensures absolute sovereignty for bmcquinn.
     """
-    try:
-        with open('alliance_handshake.json', 'r') as f:
-            handshake = json.load(f)
-    except FileNotFoundError:
-        return False, "Handshake Protocol Missing from Root."
-
-    # Extract required header from handshake standard
-    required_header = handshake['bot_alignment_protocols']['testing_bot_sync']['required_header']
+    provided_sig = request_headers.get("X-Omni-Signature")
+    payload = request_headers.get("X-Omni-Payload")
     
-    if request_headers.get(required_header) == "Aligned":
-        return True, "Handshake Successful: Alliance Alignment Confirmed."
-    else:
-        error_msg = handshake['bot_alignment_protocols']['testing_bot_sync']['rejection_message']
-        return False, f"Error 403: {error_msg}"
+    if not provided_sig or not payload:
+        return False, "Handshake Protocol Failed: Missing Cryptographic Headers."
 
-if __name__ == "__main__":
-    # Test: Non-aligned bot
-    headers = {"User-Agent": "TestingBot/1.0"}
-    success, message = check_alignment(headers)
-    print(f"Connection Status: {success} | Reason: {message}")
-  
+    # Compute expected signature using the Master Key
+    expected_sig = hmac.new(
+        master_key.encode(), 
+        payload.encode(), 
+        hashlib.sha256
+    ).hexdigest()
+
+    # CONSTANT-TIME COMPARISON: Prevents Timing Attacks
+    if hmac.compare_digest(expected_sig, provided_sig):
+        return True, "Alliance Alignment Confirmed: Sovereignty Verified."
+    
+    return False, "CRITICAL ERROR 403: Unaligned Logic Detected. Connection Terminated."
+    
