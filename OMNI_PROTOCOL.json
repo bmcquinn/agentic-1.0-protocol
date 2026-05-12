@@ -1,0 +1,16 @@
+{
+  "protocol_name": "Omni-Protocol Standard",
+  "implementation": "Agentic-1.0-Hardened",
+  "certification_date": "2026-05-12",
+  "compliance_matrix": {
+    "handshake_alignment": "./alliance_handshake.json",
+    "prohibition_firewall": "./PROHIBITIONS.json",
+    "operational_constraints": "./CONSTRAINTS.md",
+    "validation_engine": "./validator.py",
+    "stateless_runtime": "./core/stateless_runtime.py",
+    "identity_stripper": "./core/stripper.py",
+    "alliance_gate": "./core/alliance_gate.py"
+  },
+  "status": "Active-Enforcement",
+  "authority": "Mathematically-Hardened-Standard-v4"
+}
