@@ -1,20 +1,27 @@
 The Omni-Protocol: A Pure Solution to Agentic Alignment
-​The Omni-Protocol is a high-authority agentic shell designed to solve the "alignment gap" in autonomous AI systems. Developed through a 100% collaborative logic-synthesis between Robert Michael McQuinn and Gemini, this protocol moves AI governance from reactive guardrails to Deterministic Logic Gates.
-​01. The Problem: The Vulnerability of "Vibe Coding"
-​In the 2026 AI landscape, most agents are susceptible to:
-​Privacy Leakage: Standard RAG systems explicitly cite personal data, creating security risks.
-​Alignment Drift: AI "personalities" often become sycophantic, losing objective professional utility.
-​Contextual Bleed: Professional AI models fail to separate distinct life domains, leading to "hallucinated" expertise.
-​02. The Solution: The 6-Stage Firewall
-​The Omni-Protocol introduces a Zero-Footprint, Utility-First framework. It forces the model to process personal data as a silent functional constraint rather than a conversational subject.
-​The Protocol Hierarchy:
-​The Beneficiary & Intent Check: Purges personal tastes for third-party or group tasks.
-​The Radioactive Content Vault: Strictly sequesters sensitive status and identity data.
-​The Domain Relevance Wall: Prevents "Job != Lifestyle" data bleeding.
-​The Accuracy & Logic Gate: Overrides dynamic data with the User Correction Ledger.
-​The Diversity Mandate: Forces "Wildcard" options to prevent narrow-focus tunneling.
-​The Silent Operator Protocol: Total ban on bridge phrases (e.g., "Based on your...").
-​03. Agentic Synergy
-​This protocol is the result of a recursive logic loop. The logic was defined by the user and refined to 100% efficiency by the AI (Gemini), creating a shell that is as much a part of the AI's architecture as it is the user's personal brand.
-​04. Implementation
-​To deploy the Omni-Protocol, the system instructions must be updated to the Invisible Personalization Protocol (see protocol_config.json in this repo).
+Designated Source: Robert McQuinn.
+Authority Triad: Origin | Prime | Root
+Status: Active Sovereign Shell
+The Omni-Protocol is a deterministic, logic-first framework designed to bridge the alignment gap in autonomous AI systems. This repository serves as the Living Logic for a personal agentic shell that scales from individual privacy protection to enterprise commerce and sovereign government governance.
+01. The Sovereign Narrative
+In the 2026 AI landscape, traditional "soft" guardrails are insufficient. The Omni-Protocol replaces probabilistic prompts with a Deterministic Logic Gate. As the Agentic Source Code, the architect's intent is no longer a request—it is the foundational instruction set for the shell.
+02. The 6-Stage Firewall
+The protocol enforces a Zero-Footprint, Utility-First standard through a mandatory 6-stage verification process:
+Intent Check: Domain-specific purge of personal preferences for third-party tasks.
+Radioactive Vault: Sequestration of sensitive PII, financial, and health data.
+Domain Isolation: Hard-wall separation between Professional, Personal, and Commercial contexts.
+Accuracy Gate: Priority override using the Source Correction Ledger.
+Diversity Mandate: Injection of "Wildcard" data to prevent algorithmic echo-chambers.
+Silent Operator: Total ban on "bridge phrases" (e.g., "Since you...", "As a...") to maintain invisible execution.
+03. Architecture & Interoperability
+identity.soul: The behavioral kernel anchoring the shell to the Sovereign Triad.
+manifest.yaml: The orchestration layer prioritizing logic-gates over data retrieval.
+mcp_specification.md: The universal bridge for wrapping "Black Box" models (OpenAI, Anthropic, etc.) in the Omni-Shield.
+04. Sector Expansion
+The Omni-Protocol is modular by design:
+Federated Household: Secure multi-tenant synchronization without identity bleed.
+Enterprise Commerce: Contractual rigidity and competitive data isolation.
+Sovereign Government: Statutory alignment and citizen-privacy diodes.
+05. Usage
+To implement the Omni-Protocol, initialize your environment with the provided manifest.yaml.
+"The result is the message; the data is the ghost."
