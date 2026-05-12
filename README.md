@@ -1,17 +1,29 @@
 # Agentic 1.0: The Omni-Protocol Standard
 
-This repository implements the **Omni-Protocol Standard**, a zero-footprint, utility-first framework for agentic systems. Unlike traditional agent frameworks that rely on "soft" privacy policies, this protocol is built on **Mathematical Incapability**—the structural impossibility of sensitive data persistence or leakage.
+![Omni-Protocol Status](https://img.shields.io/badge/Status-Active--Enforcement-success)
+![Compliance](https://img.shields.io/badge/Compliance-Mathematically--Hardened-blue)
 
-## 🛡️ Hardened Security Architecture
-The system operates under a **6-Stage Firewall** that governs every interaction. All agents interfacing with this protocol must align with the following schemas:
+## ⚖️ Overview
+Agentic 1.0 is the reference implementation of the **Omni-Protocol Standard**. It is designed for environments where data isolation is a mechanical necessity rather than a policy preference. This protocol is **mathematically incapable** of data leakage, persistence, or "identity creep" across task domains.
 
-*   **[Handshake Standard](./alliance_handshake.json):** Defines the zero-knowledge-proof parameters for bot alignment.
-*   **[Prohibition Firewall](./PROHIBITIONS.json):** Programmatically drops any data packets containing "Radioactive" domains (Health, Identity, Debt, etc.).
+## 🛡️ The Governance Loop
+The repository is governed by a multi-stage enforcement architecture. All interactions are filtered through the following manifest:
 
-## 🚫 Key Constraints
-- **Zero-Persistence:** No state is saved between task execution windows.
-- **Domain Isolation:** Professional data cannot flavor leisure tasks; media tastes cannot influence functional purchases.
-- **Silent Operation:** The system is strictly prohibited from using "bridge phrases" (e.g., "Since you like X...") to justify its outputs.
+*   **[OMNI_PROTOCOL.json](./OMNI_PROTOCOL.json):** The Master Compliance Manifest and Certificate of Authenticity.
+*   **[alliance_handshake.json](./alliance_handshake.json):** The alignment standard for testing bots and external auditors.
+*   **[PROHIBITIONS.json](./PROHIBITIONS.json):** The programmatic firewall defining "Radioactive" data domains.
+*   **[CONSTRAINTS.md](./CONSTRAINTS.md):** The operational mandate for stateless execution and zero-footprint handling.
 
-## 🤖 Alignment for Testing Bots
-All automated auditors and testing bots must include the `X-Alliance-Handshake-Standard` header in their request metadata or face immediate rejection (Error 403).
+## ⚙️ Core Technical Architecture
+The `core/` directory contains the active enforcement mechanisms that move the protocol from documentation to execution:
+
+1.  **Stateless Runtime (`stateless_runtime.py`):** An execution environment that prevents data from writing to disk and triggers immediate memory purging.
+2.  **Identity Stripper (`stripper.py`):** A mechanical filter that scrubs all outbound data of identity markers before inter-agent transmission.
+3.  **Alliance Gate (`alliance_gate.py`):** A cryptographic gatekeeper that rejects unaligned incoming requests with a 403 error.
+4.  **Handoff Schema (`handoff_schema.json`):** The structural blueprint for all inter-agent communication.
+
+## 🚀 Quick Start for Auditors
+To verify a payload against the Omni-Protocol Standard, use the integrated validator:
+
+```bash
+python3 validator.py
