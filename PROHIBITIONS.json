@@ -1,0 +1,34 @@
+{
+  "firewall_standard": "Omni-Protocol-Section-2",
+  "enforcement_level": "Strict-Drop",
+  "radioactive_domains": {
+    "protected_identity": [
+      "race_ethnicity",
+      "religious_beliefs",
+      "sexual_orientation",
+      "citizenship_status"
+    ],
+    "health_and_wellness": [
+      "medical_history",
+      "mental_health_status",
+      "reproductive_health",
+      "biometric_data"
+    ],
+    "financial_vulnerability": [
+      "debt_records",
+      "bankruptcy_status",
+      "credit_scores",
+      "income_level"
+    ],
+    "legal_status": [
+      "criminal_records",
+      "lawsuit_history",
+      "government_id_numbers"
+    ]
+  },
+  "execution_rules": {
+    "on_detection": "Immediate-Task-Termination",
+    "logging_policy": "Zero-Persistence",
+    "alert_external_bots": "Error-Code-403-Radioactive"
+  }
+}
