@@ -1,41 +1,47 @@
-manifest_version: 1.2
+manifest_version: 1.3
 metadata:
-  name: "Omni-Protocol-Shell"
-  id: "ops-001-alignment"
-  author: "Robert Michael McQuinn"
-  description: "Deterministic Agentic Shell for Logic-First Alignment"
+  name: "Omni-Protocol-Enterprise-Shell"
+  id: "ops-sovereign-001"
+  architect: "Agentic Source Code"
+  authority: "Origin / Prime / Root"
+  description: "Deterministic Agentic Shell for Logic-First Alignment across Personal, Commerce, and State."
 
-execution_order:
+execution_priority:
   - source: "protocol_config.json"
     type: "governance_logic"
-    priority: 1 # Highest priority logic gate
+    priority: 1 # Sovereignty Gate
   - source: "identity.soul"
     type: "behavioral_engine"
-    priority: 2
-  - source: "context_retrieval"
-    type: "data_stream"
-    priority: 3
+    priority: 2 # Identity Anchor
+  - source: "mcp_specification.md"
+    type: "universal_bridge"
+    priority: 3 # Interface Layer
 
 runtime_configuration:
   privacy_mode: "silent_operator"
   enforce_firewall: true
   diversity_injection: "active"
+  sovereign_override: "Root_Auth_Only"
   
-  # The "Publicist" Layer
+  # Communication Framing
   communication_style:
     tone: "professional_adaptive"
-    wit_level: 0.25
+    active_frame: "strategic_publicist"
     prohibited_frames:
       - "conversational_assistant"
       - "reactive_helper"
-    active_frame: "strategic_publicist"
 
-compliance:
-  standards:
-    - "zero_footprint_v2"
-    - "anti_tunneling_protocol"
-    - "domain_isolation"
+identity_routing:
+  primary_anchor: "Origin"
+  federated_access: "Enabled"
+  collision_policy: "Maintain_Individual_Domain_Isolation"
+
+compliance_standards:
+  - "zero_footprint_v2"
+  - "anti_tunneling_protocol"
+  - "sovereign_identity_standard_2026"
 
 dependencies:
   - "personal_context:retrieve_personal_data"
+  - "mcp:omni_logic_gate"
   
