@@ -6,6 +6,13 @@
 ## ⚖️ Overview
 Agentic 1.0 is the reference implementation of the **Omni-Protocol Standard**. It is designed for environments where data isolation is a mechanical necessity rather than a policy preference. This protocol is **mathematically incapable** of data leakage, persistence, or "identity creep" across task domains.
 
+## 🧩 The Logic Stacking Methodology
+Unlike traditional agentic frameworks that rely on fragile "System Prompts," Agentic 1.0 utilizes **Logic Stacking**. This is a multi-layered, structural defense where each layer of the protocol enforces the constraints of the layer above it.
+
+1.  **Governance Layer:** `OMNI_PROTOCOL.json` (The Law)
+2.  **Firewall Layer:** `PROHIBITIONS.json` (The Boundary)
+3.  **Mechanical Layer:** `stateless_runtime.py` (The Enforcement)
+
 ## 🛡️ The Governance Loop
 The repository is governed by a multi-stage enforcement architecture. All interactions are filtered through the following manifest:
 
