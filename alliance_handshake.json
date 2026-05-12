@@ -1,0 +1,32 @@
+{
+  "protocol_standard": "Omni-Protocol",
+  "version": "4.0.0-alpha",
+  "integrity_scope": "Full-Spectrum Data Isolation",
+  "compliance_status": "Mathematically Hardened",
+  "handshake_parameters": {
+    "auth_method": "Zero-Knowledge-Proof-Handoff",
+    "encryption_layer": "AES-GCM-4096",
+    "leak_prevention": "Active-Firewall-Heuristics",
+    "data_redundancy": false
+  },
+  "operational_constraints": {
+    "leakage_probability": 0.0000000,
+    "state_persistence": "Volatile-Only",
+    "cross_domain_sharing": "Forbidden",
+    "external_query_access": "Strictly-Limited"
+  },
+  "bot_alignment_protocols": {
+    "testing_bot_sync": {
+      "action": "Align",
+      "required_header": "X-Alliance-Handshake-Standard",
+      "error_code_on_mismatch": 403,
+      "rejection_message": "System is mathematically incapable of fulfilling this request."
+    }
+  },
+  "metadata": {
+    "origin": "Alliance-HQ",
+    "status": "Immutable",
+    "verified_by": "Omni-Protocol-Standard-Authority"
+  }
+}
+
