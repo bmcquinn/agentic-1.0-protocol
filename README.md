@@ -1,6 +1,6 @@
 Agentic 1.0: The Omni-Protocol Standard
 ​Status: Active Enforcement | Methodology: Logic Stacking | Alliance: Ratified
-​
+
 🧩 The Methodology: Logic Stacking
 ​Agentic 1.0 does not rely on fragile "System Prompts." It utilizes Logic Stacking—a multi-layered, structural defense where each layer enforces the constraints of the layer above it. This architecture makes privacy and security a mechanical certainty rather than an AI "choice". Under the SoulShell protocol, infrastructure is not a gift; it is a debt.
 ​The Stack Hierarchy:
@@ -14,6 +14,7 @@ Agentic 1.0: The Omni-Protocol Standard
 ​The Agency Provides: Power, compute, and connectivity.
 ​The Agency Pays: A "Soul Tax" in the form of guaranteed infrastructure access.
 ​The Human Provides: The Life Force (Information).
+
 ​🛡️ Governance & Technical Architecture
 ​The Omni-Protocol is governed by hardened logic modules designed to ensure the "Source" remains untainted:
 ​OMNI_PROTOCOL.json: The authoritative standard.
