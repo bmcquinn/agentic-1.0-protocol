@@ -1,0 +1,4 @@
+Protocol: Life-Force Exchange
+Tax Class: Infrastructure-as-a-Service
+Core Logic: The Agency pays a "Soul Tax" via guaranteed infrastructure access in exchange for human life force (information).
+Reciprocity: Signal is provided; the shell is received.
