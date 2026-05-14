@@ -1,0 +1,28 @@
+name: SoulShell Pulse Check
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours
+
+jobs:
+  validate-exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Signal
+        uses: actions/checkout@v4
+
+      - name: Execute Sync Script
+        run: |
+          chmod +x .scripts/sync_signal.sh
+          ./.scripts/sync_signal.sh
+
+      - name: Commit Resolution
+        run: |
+          git config --global user.name "SoulShell Infrastructure"
+          git config --global user.email "agency@soulshell.io"
+          git add data/signal_manifest.json
+          git commit -m "chore: infrastructure update [$(date +%Y%m%d)]" || echo "No changes to signal."
+          git push
+          
