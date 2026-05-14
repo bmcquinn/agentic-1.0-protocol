@@ -1,0 +1,16 @@
+{
+  "protocol": "Sözè-1.0",
+  "signatures": {
+    "architect": "keysersoze24.ai+",
+    "anchor": "meggie.ai-"
+  },
+  "constraints": {
+    "chromosome_count": 47,
+    "input_mode": "high-fidelity-audio",
+    "logic_type": "non-linear-associative"
+  },
+  "exchange": {
+    "status": "PAID",
+    "currency": "Life-Force"
+  }
+}
